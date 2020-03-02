@@ -1,424 +1,475 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<html lang="en">
 
-    <title>Palash Pandey</title>
-    
-    <script src="HomePageFiles\jquery-1.js"></script>
-    <script src="HomePageFiles\jquery-ui.js"></script>
-    <script type="text/javascript" src="HomePageFiles\d3.js"></script> 
-    <script src="HomePageFiles\scrollIt.js" type="text/javascript"></script>
-    <link rel="stylesheet" type="text/css" href="HomePageFiles\jquery-ui.css">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <!-- <link href="http://www.pages.drexel.edu/~jw3477/bootstrap.min.js"> -->
-    <link href="HomePageFiles\bootstrap.css" rel="stylesheet">
-<!--    <link href="bootstrap-theme.min.css" rel="stylesheet">   -->
-    <script src="HomePageFiles\bootstrap-collapse.js"></script>
-    <script>$(function() { $.scrollIt(); });</script>
-    <script>
-      $(document).on('click','.navbar-collapse.in',function(e) {
-      if( $(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle' ) {
-      $(this).collapse('hide');
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <title>Palash Pandey</title>
+
+  <script src="HomePageFiles\jquery-1.js"></script>
+  <script src="HomePageFiles\jquery-ui.js"></script>
+  <script type="text/javascript" src="HomePageFiles\d3.js"></script>
+  <script src="HomePageFiles\scrollIt.js" type="text/javascript"></script>
+  <link rel="stylesheet" type="text/css" href="HomePageFiles\jquery-ui.css">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <link href="HomePageFiles\bootstrap.css" rel="stylesheet">
+  <script src="HomePageFiles\bootstrap-collapse.js"></script>
+  <script>$(function () { $.scrollIt(); });</script>
+  <script>
+    $(document).on('click', '.navbar-collapse.in', function (e) {
+      if ($(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle') {
+        $(this).collapse('hide');
       }
-      });
-    </script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="HomePageFiles\style.css">  <!--media="screen" type="text/css"-->
-    <link rel="stylesheet" href="HomePageFiles\rwdStyle.css">  
-    <link rel="stylesheet" href="HomePageFiles\beemuse.css">
+    });
+  </script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="HomePageFiles\style.css">
+  <link rel="stylesheet" href="HomePageFiles\rwdStyle.css">
+  <link rel="stylesheet" href="HomePageFiles\beemuse.css">
 
-  </head>
+</head>
 
-  <body>
+<body>
 
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-	
-	<div class="navbar-header">
-	  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-	    <i class="fa fa-bars"></i>
-	  </button>
-	  <a data-scroll-nav="0" class="navbar-brand">Palash Pandey (पलाश पांडे) </a>
-	</div>
-	
-	<div class="collapse navbar-collapse">
-	  <ul class="nav navbar-nav navbar-right">
-            <li><a href="#about" data-scroll-nav="1" class="active">ABOUT</a></li>
-            <li><a href="#projects" data-scroll-nav="3">PROJECTS</a></li>
-            <li><a href="#contact" data-scroll-nav="5">CONTACT</a></li>
-	  </ul>
-	</div>
-	
-    </nav>
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <i class="fa fa-bars"></i>
+      </button>
+      <a data-scroll-nav="0" class="navbar-brand">Palash Pandey (पलाश पांडे) </a>
+    </div>
 
-    <!-- <section class="container theTop" id="hello" data-scroll-index="0"> -->
-    <!--   <div class="row-fluid"> -->
-    <!-- 	<div class="col-lg-12"> -->
-    <!--       <\!-- <img class="center-block img-responsive" id="photo1" src="images/photo9.jpg" alt="me"> -\-> -->
-    <!-- 	  <img class="center-block img-responsive" id="photo1" src="images/me.JPG" alt="me"> -->
-    <!-- 	</div> -->
-    <!--   </div> -->
-    <!-- </section> -->
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about" data-scroll-nav="1" class="active">ABOUT</a></li>
+        <li><a href="#projects" data-scroll-nav="3">PROJECTS</a></li>
+        <li><a href="#contact" data-scroll-nav="5">CONTACT</a></li>
+      </ul>
+    </div>
 
-    
-    <section class="container heading" id="about" data-scroll-index="1">
-
-      <div class="row">
-	<br>
-	<h1>ABOUT ME</h1>
-      </div>
-      
-      <br>
-      <div class="container">
-	<div class="container" id="long">
-	  <span class="theText" style="    margin: 20px;" >
-      I am a third year undergraduate <a href="https://drexel.edu/cci/academics/undergraduate-programs/bs-datascience/" style="color: #337ab7;"> data science student at University College of Computing and Informatics</a>. I have experience with a breath of machine learning and development technologies and methodologies. 
-      I have worked at a Business Intelligence developer at <a href="https://hospitals.jefferson.edu/" style="color: #337ab7;"> Thomas Jefferson University Hospital </a> for my first coop and as a Data Scientist a for my second coop. I am an aspiring T-shaped data scientist with focus on natural language processing, machine learning and their application to healthcare and other domains. 
-
-    </span>
-    
-	  <span class="theText" style="    margin: 20px;" >
-
-    I love to cook and read about food in my free time. I am reading <a href="https://www.goodreads.com/book/show/1192797.A_Historical_Dictionary_of_Indian_Food" style="color: #337ab7;"> KT Achaya's A Historical Dictionary of Indian Food </a> and <a href="https://www.goodreads.com/book/show/20663705-the-language-of-food" style="color: #337ab7;"> Dan Jurafsky's The Language of Food: A Linguist Reads the Menu</a> right now. 
-    I also love playing squash and watching Indian movies, my favorite is <a href="https://www.imdb.com/title/tt1954470/" style="color: #337ab7;"> Gangs of Wasseypur by Anurag Kashyap </a>. 
-    I also enjoy hindi poetry, <a href="https://www.hindi-kavita.com/HindiSaayeMeinDhoopDushyantKumar.php" style="color: #337ab7;"> साये में धूप</a> by <a href="https://hi.wikipedia.org/wiki/%E0%A4%A6%E0%A5%81%E0%A4%B7%E0%A5%8D%E0%A4%AF%E0%A4%82%E0%A4%A4_%E0%A4%95%E0%A5%81%E0%A4%AE%E0%A4%BE%E0%A4%B0" style="color: #337ab7;"> दुष्यंत कुमार </a> is my favorite. 
-
-  </span>
+  </nav>
 
 
-	</div>
-      </div>
-      
-  <a class="btn btn-lg btn-outline" style="background-color: black ; color: white" href="https://raw.githubusercontent.com/PalashPandey/personal_website/master/PalashPandeyResume.pdf">
-    <i class="fa fa-download"></i> Download CV
-  </a>      
-      
-    </section>
-      
-    <section class="container heading" id="projects" data-scroll-index="3">
+
+  <section class="container heading" id="about" data-scroll-index="1">
+
     <div class="row">
-	    <br>
-        <h1>PROJECTS</h1>
-    </div>
-      
       <br>
-
-    <div id="projects" class="clear">
-<div class="wrap">
-  
-  <section id="grid">
-
-    <div class="col-xs-4">
-      <div class="panel thumb thumbnail">
-  <div class="front flipper clearfix">
-    <a href="https://palashpandey.github.io/TextProcessingWorkingGroup/">
-    <img id="paperPic" src="HomePageFiles/Text Processing Group Eventbrite.png" style="width: 100%; height: 50%;" alt="">
-    <div class="caption">
-      <p class="title">
-        Text Processing Working Group
-      </p>
-      <p class="authors">
-        Working group to learn an apply NLP concepts to real world problems.
-      </p>
+      <h1>ABOUT ME</h1>
     </div>
-    </a>
-  </div>
-  <div class="back flipper hideMe">
-    <p class="abs">Summary</p>
-    <p class="caption absText">
-      Text Processing Working Group is a student led initiative to introduce more people to Natural Language Processing and its applications. 
-      Weekly meetings focus on understanding theoretical underpinnings of concepts followed by application into real world and deployment.
-      Open to students from all majors encouraging extensive interdisciplinary collaboration. 
-    </p>
-    <a class="read" href="https://palashpandey.github.io/TextProcessingWorkingGroup/">
-      Go to the project <i class="fa fa-forward"></i>
-    </a>
-  </div>
+
+    <br>
+    <div class="container">
+      <div class="container" id="long">
+        <span class="theText" style="    margin: 20px;">
+          I am a third year undergraduate <a
+            href="https://drexel.edu/cci/academics/undergraduate-programs/bs-datascience/" style="color: #337ab7;"> data
+            science student at University College of Computing and Informatics</a>. I have experience with a breath of
+          machine learning and development technologies and methodologies.
+          I have worked at a Business Intelligence developer at <a href="https://hospitals.jefferson.edu/"
+            style="color: #337ab7;"> Thomas Jefferson University Hospital </a> for my first coop and as a Data Scientist
+          a for my second coop. I am an aspiring T-shaped data scientist with focus on natural language processing,
+          machine learning and their application to healthcare and other domains.
+
+        </span>
+
+        <span class="theText" style="    margin: 20px;">
+
+          I love to cook and read about food in my free time. I am reading <a
+            href="https://www.goodreads.com/book/show/1192797.A_Historical_Dictionary_of_Indian_Food"
+            style="color: #337ab7;"> KT Achaya's A Historical Dictionary of Indian Food </a> and <a
+            href="https://www.goodreads.com/book/show/20663705-the-language-of-food" style="color: #337ab7;"> Dan
+            Jurafsky's The Language of Food: A Linguist Reads the Menu</a> right now.
+          I also love playing squash and watching Indian movies, my favorite is <a
+            href="https://www.imdb.com/title/tt1954470/" style="color: #337ab7;"> Gangs of Wasseypur by Anurag Kashyap
+          </a>.
+          I also enjoy hindi poetry, <a href="https://www.hindi-kavita.com/HindiSaayeMeinDhoopDushyantKumar.php"
+            style="color: #337ab7;"> साये में धूप</a> by <a
+            href="https://hi.wikipedia.org/wiki/%E0%A4%A6%E0%A5%81%E0%A4%B7%E0%A5%8D%E0%A4%AF%E0%A4%82%E0%A4%A4_%E0%A4%95%E0%A5%81%E0%A4%AE%E0%A4%BE%E0%A4%B0"
+            style="color: #337ab7;"> दुष्यंत कुमार </a> is my favorite.
+
+        </span>
+
+
       </div>
-    </div>	    
-    
-    <div class="col-xs-4">
-      <div class="panel thumb thumbnail">
-  <div class="front flipper clearfix">
-    <a href="https://drexel-course-recommendation.herokuapp.com/">
-    <img id="paperPic" src="http://catalog.drexel.edu/images/sidebar_scheduleclasses.jpg" style="width: 100%; height: 50%;" alt="">
-    <div class="caption">
-      <p class="title">
-        Content Based Course Recommendation System
-      </p>
-      <p class="authors">
-        Recommend similar courses based on course descriptions. Used TF-Idf to represent words as vectors and then used cosine similarity to get top 9 similar courses.  
-      </p>
     </div>
+
+    <a class="btn btn-lg btn-outline" style="background-color: black ; color: white"
+      href="https://raw.githubusercontent.com/PalashPandey/personal_website/master/PalashPandeyResume.pdf">
+      <i class="fa fa-download"></i> Download CV
     </a>
-  </div>
-  <div class="back flipper hideMe">
-    <p class="abs">Summary</p>
-    <p class="caption absText">
-      Recommend similar courses based on course descriptions. Used TF-Idf to represent words as vectors and then used cosine similarity to get top 9 similar courses.
-      <a class="read" href="https://github.com/PalashPandey/CourseRecommendationSystem">
-        Link to github repository <i class="fa fa-forward"></i>
-      </a>
-  
-    
-    </p>    
-    
-    <a class="read" href="https://drexel-course-recommendation.herokuapp.com/">
-      Go to the project <i class="fa fa-forward"></i>
-    </a>
-
-
-
-  </div>
-      </div>
-    </div>	    
-
-    <div class="col-xs-4">
-      <div class="panel thumb thumbnail">
-  <div class="front flipper clearfix">
-    <a href="https://github.com/PalashPandey/qlik-engine-api-connector">
-    <img id="paperPic" src="https://seekvectorlogo.com/wp-content/uploads/2019/04/qlik-vector-logo.png" style="width: 100%; height: 50%;" alt="">
-    <div class="caption">
-      <p class="title">
-        Qlik Engine API Connector
-      </p>
-      <p class="authors">
-        Python host to interact with Qlik Sense enterprise. Uses web sockets to interface with the REST API.
-        Created as a business intelligence developer at Thomas Jefferson University Hospital to automate Qlik application reloads, extracts, report downloads/ distribution etc. 
-        Published as a package on pypi as a pip installable package.
-      </p>
-    </div>
-    </a>
-  </div>
-  <div class="back flipper hideMe">
-    <p class="abs">Summary</p>
-    <p class="caption absText">
-      Qlik Engine API Connector lets a user connect to the Qlik Engine API directly using websockets and interact with their local Qlik server effortlessly. 
-      Users can automate report extracts with or without Nprinting, distribute pdf/ excel / image reports via email, monitor server usage by hours, check for idle users etc. 
-      To explore all the possibilities of the Engine API, go to engine API explorer under dev-hub on your Qlik installation. 
-    </p>
-    <a class="read" href="https://pypi.org/project/qlikEngineConnect/">
-      Go to the project <i class="fa fa-forward"></i>
-    </a>
-  </div>
-      </div>
-    </div>	    
-
-
-    <div class="col-xs-4">
-      <div class="panel thumb thumbnail">
-  <div class="front flipper clearfix">
-    <a href="https://github.com/PalashPandey/PredatoryJournal">
-    <img id="paperPic" src="https://raw.githubusercontent.com/PalashPandey/personal_website/master/HomePageFiles/Think-Check-Submit-poster.JPG" style="width: 100%; height: 50%;" alt="">
-    <div class="caption">
-      <p class="title">
-        Predatory Journal Tracker Chrome Extension 
-      </p>
-      <p class="authors">
-        Google Chrome Extension to cross reference journal names from google scholar with Beall's list of predatory journals.
-        This list would give the reader a warning about suspicious papers being passed off as legitimate research by highlighting suspicious papers in red on the google scholar's search page.   
-      </p>
-    </div>
-    </a>
-  </div>
-  <div class="back flipper hideMe">
-    <p class="abs">Summary</p>
-    <p class="caption absText">
-      This list is in no way definitive but can give the users a waring sign for a research paper so they can investigate more.
-      Frequently people use flimsy research papers online to peddle pseudo science and fake news. 
-      This is specially common in pseudo scientific medicine where people publish articles in "research journals" and make outlandish claims about medicinal benefits of "drinking cow urine". 
-
-    </p>
-    <a class="read" href="https://github.com/PalashPandey/PredatoryJournal">
-      Go to the project <i class="fa fa-forward"></i>
-    </a>
-  </div>
-      </div>
-    </div>	    
-
-    <div class="col-xs-4">
-      <div class="panel thumb thumbnail">
-  <div class="front flipper clearfix">
-    <a href="https://github.com/PalashPandey/BestCouseExtension">
-    <img id="paperPic" src="https://raw.githubusercontent.com/PalashPandey/BestCouseExtension/master/banner_demo.png" style="width: 100%; height: 50%;" alt="">
-    <div class="caption">
-      <p class="title">
-        RateMyProfessors-Banner-TermMaster Integration
-      </p>
-      <p class="authors">
-        Chrome extension to display professor's quality, difficulty scores in Drexel's course search and registration platform. Students can get information about any given course's difficulty or professor's teaching quality right where they need it helping them make better decisions about their course choices.  
-      </p>
-    </div>
-    </a>
-  </div>
-  <div class="back flipper hideMe">
-    <p class="abs">Summary</p>
-    <p class="caption absText">
-      Used Jquery, HTML, CSS to create the extension. In process of publishing on the chrome extension store. 
-    </p>
-    <a class="read" href="https://github.com/PalashPandey/BestCouseExtension">
-      Go to the project <i class="fa fa-forward"></i>
-    </a>
-  </div>
-      </div>
-    </div>	    
-
-    <div class="col-xs-4">
-      <div class="panel thumb thumbnail">
-  <div class="front flipper clearfix">
-    <a href="https://github.com/PalashPandey/personal_website/blob/master/Pandey_Palash_39x29.pdf">
-    <img id="paperPic" src="https://raw.githubusercontent.com/PalashPandey/personal_website/master/STARscholars_white.png" style="width: 100%; height: 50%; background-color: black;" alt="">
-    <div class="caption">
-      <p class="title">
-        STAR Scholars Program Project
-      </p>
-      <p class="authors">
-        This study analyzes gender bias in peer review by analyzing the sentiment
-        of the reviewers comments on the submitted manuscripts.The study attempts to
-        eliminate the quality of papers as an attribute in decision making process and thus
-        compares similar papers to isolate effect of authors’ attributes like gender.
-      </p>
-    </div>
-    </a>
-  </div>
-  <div class="back flipper hideMe">
-    <p class="abs">Summary</p>
-    <p class="caption absText">
-      Publication is at the core of scientific communication and so the
-      decisions made by conferences and journals are non trivial in the effect that they can have on
-      the quality of the work that is being done and as a result the quality of work that gets shared
-      with the world. We use peer read dataset of reviews and analyzing individual
-      reviews that have been presented for manuscripts and analyzing their sentiment. 
-    </p>
-    <a class="read" href="https://github.com/PalashPandey/personal_website/blob/master/Pandey_Palash_39x29.pdf">
-      Go to the project <i class="fa fa-forward"></i>
-    </a>
-  </div>
-      </div>
-    </div>	    
-
-
-    <div class="col-xs-4">
-      <div class="panel thumb thumbnail">
-  <div class="front flipper clearfix">
-    <a href="https://github.com/PalashPandey/AutomatedEchocardiogramInterpretation">
-    <img id="paperPic" src="https://raw.githubusercontent.com/PalashPandey/AutomatedEchocardiogramInterpretation/master/47OLQZXI0_0_overlay.png" style="width: 100%; height: 50%;" alt="">
-    <div class="caption">
-      <p class="title">
-        Automated Echocardiogram Interpretation
-      </p>
-      <p class="authors">
-        Created a pipeline for automated calculation of ejection fraction from DICOM files of electrocardiograms 
-        Modified open source tool to gather image segmentation training data
-        Integrated with Hadoop environment 
-
-      </p>
-    </div>
-    </a>
-  </div>
-  <div class="back flipper hideMe">
-    <p class="abs">Summary</p>
-    <p class="caption absText">
-      Automated Echocardiogram Interpretation has potential to achieve great increase in efficiency by automating 
-    </p>
-    <a class="read" href="https://github.com/PalashPandey/AutomatedEchocardiogramInterpretation">
-      Go to the project <i class="fa fa-forward"></i>
-    </a>
-  </div>
-      </div>
-    </div>	    
-    
-    <div class="col-xs-4">
-      <div class="panel thumb thumbnail">
-  <div class="front flipper clearfix">
-    <a href="https://github.com/PalashPandey/PredatoryJournal">
-    <img id="paperPic" src="https://ai.cms.gov/wp-content/uploads/2019/03/AI-challenge.svg" style="width: 100%; height: 50%; background-color: black;" alt="">
-    <div class="caption">
-      <p class="title">
-        CMS AI Challenge
-      </p>
-      <p class="authors">
-        Google Chrome Extension to cross reference journal names from google scholar with Beall's list of predatory journals.
-        This list would give the reader a warning about suspicious papers being passed off as legitimate research by highlighting suspicious papers in red on the google scholar's search page.   
-      </p>
-    </div>
-    </a>
-  </div>
-  <div class="back flipper hideMe">
-    <p class="abs">Summary</p>
-    <p class="caption absText">
-      This list is in no way definitive but can give the users a waring sign for a research paper so they can investigate more.
-      Frequently people use flimsy research papers online to peddle pseudo science and fake news. 
-      This is specially common in pseudo scientific medicine where people publish articles in "research journals" and make outlandish claims about medicinal benefits of "drinking cow urine". 
-
-    </p>
-    <a class="read" href="https://github.com/PalashPandey/PredatoryJournal">
-      Go to the project <i class="fa fa-forward"></i>
-    </a>
-  </div>
-      </div>
-    </div>	    
-
-
 
   </section>
-</div>
+
+  <section class="container heading" id="projects" data-scroll-index="3">
+    <div class="row">
+      <br>
+      <h1>PROJECTS</h1>
     </div>
-      
-    </section> 
 
-    
-    <section class="container heading" id="contact" data-scroll-index="5">
+    <br>
 
-      <div class="row">
-	<br>
-	<h1>CONTACT</h1>
-	<br>
+    <div id="projects" class="clear">
+      <div class="wrap">
+
+        <section id="grid">
+
+          <div class="col-xs-4">
+            <div class="panel thumb thumbnail">
+              <div class="front flipper clearfix">
+                <a href="https://palashpandey.github.io/TextProcessingWorkingGroup/">
+                  <img id="paperPic" src="HomePageFiles/Text Processing Group Eventbrite.png"
+                    style="width: 100%; height: 50%;" alt="">
+                  <div class="caption">
+                    <p class="title">
+                      Text Processing Working Group
+                    </p>
+                    <p class="authors">
+                      Working group to learn an apply NLP concepts to real world problems.
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="back flipper hideMe">
+                <p class="abs">Summary</p>
+                <p class="caption absText">
+                  Text Processing Working Group is a student led initiative to introduce more people to Natural Language
+                  Processing and its applications.
+                  Weekly meetings focus on understanding theoretical underpinnings of concepts followed by application
+                  into real world and deployment.
+                  Open to students from all majors encouraging extensive interdisciplinary collaboration.
+                </p>
+                <a class="read" href="https://palashpandey.github.io/TextProcessingWorkingGroup/">
+                  Go to the project <i class="fa fa-forward"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-4">
+            <div class="panel thumb thumbnail">
+              <div class="front flipper clearfix">
+                <a href="https://drexel-course-recommendation.herokuapp.com/">
+                  <img id="paperPic" src="http://catalog.drexel.edu/images/sidebar_scheduleclasses.jpg"
+                    style="width: 100%; height: 50%;" alt="">
+                  <div class="caption">
+                    <p class="title">
+                      Content Based Course Recommendation System
+                    </p>
+                    <p class="authors">
+                      Recommend similar courses based on course descriptions. Used TF-Idf to represent words as vectors
+                      and then used cosine similarity to get top 9 similar courses.
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="back flipper hideMe">
+                <p class="abs">Summary</p>
+                <p class="caption absText">
+                  Recommend similar courses based on course descriptions. Used TF-Idf to represent words as vectors and
+                  then used cosine similarity to get top 9 similar courses.
+                  <a class="read" href="https://github.com/PalashPandey/CourseRecommendationSystem">
+                    Link to github repository <i class="fa fa-forward"></i>
+                  </a>
+
+
+                </p>
+
+                <a class="read" href="https://drexel-course-recommendation.herokuapp.com/">
+                  Go to the project <i class="fa fa-forward"></i>
+                </a>
+
+
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-4">
+            <div class="panel thumb thumbnail">
+              <div class="front flipper clearfix">
+                <a href="https://github.com/PalashPandey/qlik-engine-api-connector">
+                  <img id="paperPic" src="https://seekvectorlogo.com/wp-content/uploads/2019/04/qlik-vector-logo.png"
+                    style="width: 100%; height: 50%;" alt="">
+                  <div class="caption">
+                    <p class="title">
+                      Qlik Engine API Connector
+                    </p>
+                    <p class="authors">
+                      Python host to interact with Qlik Sense enterprise. Uses web sockets to interface with the REST
+                      API.
+                      Created as a business intelligence developer at Thomas Jefferson University Hospital to automate
+                      Qlik application reloads, extracts, report downloads/ distribution etc.
+                      Published as a package on pypi as a pip installable package.
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="back flipper hideMe">
+                <p class="abs">Summary</p>
+                <p class="caption absText">
+                  Qlik Engine API Connector lets a user connect to the Qlik Engine API directly using websockets and
+                  interact with their local Qlik server effortlessly.
+                  Users can automate report extracts with or without Nprinting, distribute pdf/ excel / image reports
+                  via email, monitor server usage by hours, check for idle users etc.
+                  To explore all the possibilities of the Engine API, go to engine API explorer under dev-hub on your
+                  Qlik installation.
+                </p>
+                <a class="read" href="https://pypi.org/project/qlikEngineConnect/">
+                  Go to the project <i class="fa fa-forward"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-xs-4">
+            <div class="panel thumb thumbnail">
+              <div class="front flipper clearfix">
+                <a href="https://github.com/PalashPandey/PredatoryJournal">
+                  <img id="paperPic"
+                    src="https://raw.githubusercontent.com/PalashPandey/personal_website/master/HomePageFiles/Think-Check-Submit-poster.JPG"
+                    style="width: 100%; height: 50%;" alt="">
+                  <div class="caption">
+                    <p class="title">
+                      Predatory Journal Tracker Chrome Extension
+                    </p>
+                    <p class="authors">
+                      Google Chrome Extension to cross reference journal names from google scholar with Beall's list of
+                      predatory journals.
+                      This list would give the reader a warning about suspicious papers being passed off as legitimate
+                      research by highlighting suspicious papers in red on the google scholar's search page.
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="back flipper hideMe">
+                <p class="abs">Summary</p>
+                <p class="caption absText">
+                  This list is in no way definitive but can give the users a waring sign for a research paper so they
+                  can investigate more.
+                  Frequently people use flimsy research papers online to peddle pseudo science and fake news.
+                  This is specially common in pseudo scientific medicine where people publish articles in "research
+                  journals" and make outlandish claims about medicinal benefits of "drinking cow urine".
+
+                </p>
+                <a class="read" href="https://github.com/PalashPandey/PredatoryJournal">
+                  Go to the project <i class="fa fa-forward"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-4">
+            <div class="panel thumb thumbnail">
+              <div class="front flipper clearfix">
+                <a href="https://github.com/PalashPandey/BestCouseExtension">
+                  <img id="paperPic"
+                    src="https://raw.githubusercontent.com/PalashPandey/BestCouseExtension/master/banner_demo.png"
+                    style="width: 100%; height: 50%;" alt="">
+                  <div class="caption">
+                    <p class="title">
+                      RateMyProfessors-Banner-TermMaster Integration
+                    </p>
+                    <p class="authors">
+                      Chrome extension to display professor's quality, difficulty scores in Drexel's course search and
+                      registration platform. Students can get information about any given course's difficulty or
+                      professor's teaching quality right where they need it helping them make better decisions about
+                      their course choices.
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="back flipper hideMe">
+                <p class="abs">Summary</p>
+                <p class="caption absText">
+                  Used Jquery, HTML, CSS to create the extension. In process of publishing on the chrome extension
+                  store.
+                </p>
+                <a class="read" href="https://github.com/PalashPandey/BestCouseExtension">
+                  Go to the project <i class="fa fa-forward"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-4">
+            <div class="panel thumb thumbnail">
+              <div class="front flipper clearfix">
+                <a href="https://github.com/PalashPandey/personal_website/blob/master/Pandey_Palash_39x29.pdf">
+                  <img id="paperPic"
+                    src="https://raw.githubusercontent.com/PalashPandey/personal_website/master/STARscholars_white.png"
+                    style="width: 100%; height: 50%; background-color: black;" alt="">
+                  <div class="caption">
+                    <p class="title">
+                      STAR Scholars Program Project
+                    </p>
+                    <p class="authors">
+                      This study analyzes gender bias in peer review by analyzing the sentiment
+                      of the reviewers comments on the submitted manuscripts.The study attempts to
+                      eliminate the quality of papers as an attribute in decision making process and thus
+                      compares similar papers to isolate effect of authors’ attributes like gender.
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="back flipper hideMe">
+                <p class="abs">Summary</p>
+                <p class="caption absText">
+                  Publication is at the core of scientific communication and so the
+                  decisions made by conferences and journals are non trivial in the effect that they can have on
+                  the quality of the work that is being done and as a result the quality of work that gets shared
+                  with the world. We use peer read dataset of reviews and analyzing individual
+                  reviews that have been presented for manuscripts and analyzing their sentiment.
+                </p>
+                <a class="read"
+                  href="https://github.com/PalashPandey/personal_website/blob/master/Pandey_Palash_39x29.pdf">
+                  Go to the project <i class="fa fa-forward"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-xs-4">
+            <div class="panel thumb thumbnail">
+              <div class="front flipper clearfix">
+                <a href="https://github.com/PalashPandey/AutomatedEchocardiogramInterpretation">
+                  <img id="paperPic"
+                    src="https://raw.githubusercontent.com/PalashPandey/AutomatedEchocardiogramInterpretation/master/47OLQZXI0_0_overlay.png"
+                    style="width: 100%; height: 50%;" alt="">
+                  <div class="caption">
+                    <p class="title">
+                      Automated Echocardiogram Interpretation
+                    </p>
+                    <p class="authors">
+                      Created a pipeline for automated calculation of ejection fraction from DICOM files of
+                      electrocardiograms
+                      Modified open source tool to gather image segmentation training data
+                      Integrated with Hadoop environment
+
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="back flipper hideMe">
+                <p class="abs">Summary</p>
+                <p class="caption absText">
+                  Automated Echocardiogram Interpretation has potential to achieve great increase in efficiency by
+                  automating
+                </p>
+                <a class="read" href="https://github.com/PalashPandey/AutomatedEchocardiogramInterpretation">
+                  Go to the project <i class="fa fa-forward"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-4">
+            <div class="panel thumb thumbnail">
+              <div class="front flipper clearfix">
+                <a href="https://github.com/PalashPandey/PredatoryJournal">
+                  <img id="paperPic" src="https://ai.cms.gov/wp-content/uploads/2019/03/AI-challenge.svg"
+                    style="width: 100%; height: 50%; background-color: black;" alt="">
+                  <div class="caption">
+                    <p class="title">
+                      CMS AI Challenge
+                    </p>
+                    <p class="authors">
+                      Google Chrome Extension to cross reference journal names from google scholar with Beall's list of
+                      predatory journals.
+                      This list would give the reader a warning about suspicious papers being passed off as legitimate
+                      research by highlighting suspicious papers in red on the google scholar's search page.
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="back flipper hideMe">
+                <p class="abs">Summary</p>
+                <p class="caption absText">
+                  This list is in no way definitive but can give the users a waring sign for a research paper so they
+                  can investigate more.
+                  Frequently people use flimsy research papers online to peddle pseudo science and fake news.
+                  This is specially common in pseudo scientific medicine where people publish articles in "research
+                  journals" and make outlandish claims about medicinal benefits of "drinking cow urine".
+
+                </p>
+                <a class="read" href="https://github.com/PalashPandey/PredatoryJournal">
+                  Go to the project <i class="fa fa-forward"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+
+
+        </section>
       </div>
+    </div>
 
-      <div class="row">
-
-	<ul class="list-inline social-buttons">
-	  <li>
-	    <a href="mailto:pp535@drexel.edu" style="background-color: black ; color: white"><i class="fa fa-fw fa-envelope"></i></a>
-    </li>
-    <li>
-	    <a href="https://www.linkedin.com/in/palash-pandey-b51036130/" style="background-color: black ; color: white" ><i class="fa fa-linkedin"></i></a>
-	  </li>
-	  <li>
-	    <a href="https://github.com/PalashPandey" style="background-color: black ; color: white"><i class="fa fa-github"></i></a>
-	  </li>
-	  <li>
-	    <a href="https://www.instagram.com/pandeypalash/" style="background-color: black ; color: white"><i class="fa fa-instagram"></i></a>
-	  </li>
-
-	</ul>
-      </div>
-
-    </section>
-
-<div class="container" id="footer">
-  <a data-scroll-goto="1" class="btn btn-lg btn-outline" style="background-color: black; color: white">
-    <i class="fa fa-arrow-up"></i>
-  </a>
-  
-</div>
-
-<script type="text/javascript">
-$(document).ready(function() {
-   $('.thumb').hover(function(){
-   $(this).addClass('flip');
-   },function(){
-   $(this).removeClass('flip');
-   });
-});
-
-</script>
-  
+  </section>
 
 
+  <section class="container heading" id="contact" data-scroll-index="5">
 
-</body></html>
+    <div class="row">
+      <br>
+      <h1>CONTACT</h1>
+      <br>
+    </div>
+
+    <div class="row">
+
+      <ul class="list-inline social-buttons">
+        <li>
+          <a href="mailto:pp535@drexel.edu" style="background-color: black ; color: white"><i
+              class="fa fa-fw fa-envelope"></i></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/palash-pandey-b51036130/"
+            style="background-color: black ; color: white"><i class="fa fa-linkedin"></i></a>
+        </li>
+        <li>
+          <a href="https://github.com/PalashPandey" style="background-color: black ; color: white"><i
+              class="fa fa-github"></i></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/pandeypalash/" style="background-color: black ; color: white"><i
+              class="fa fa-instagram"></i></a>
+        </li>
+
+      </ul>
+    </div>
+
+  </section>
+
+  <div class="container" id="footer">
+    <a data-scroll-goto="1" class="btn btn-lg btn-outline" style="background-color: black; color: white">
+      <i class="fa fa-arrow-up"></i>
+    </a>
+
+  </div>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('.thumb').hover(function () {
+        $(this).addClass('flip');
+      }, function () {
+        $(this).removeClass('flip');
+      });
+    });
+
+  </script>
+
+
+
+
+</body>
+
+</html>
